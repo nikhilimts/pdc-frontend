@@ -1,15 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-
 export default defineConfig({
-  // base: '/ERP/',
-
+  base: './',  // << important for subfolder deployment
   plugins: [react()],
 });
-
-// export default defineConfig({
-//   plugins: [react({
-//     include: "**/*.jsx",
-//   })]
-// })
